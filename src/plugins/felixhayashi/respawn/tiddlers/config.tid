@@ -1,0 +1,18 @@
+title: $:/plugins/felixhayashi/respawn/Configuration
+
+Please see the [[GitHub page|https://github.com/felixhayashi/TW5-Respawn]] for more information on the options.
+
+You may have to save and reload the wiki to activate changes.
+
+<table>
+  <tr>
+    <th align="left">Delay (seconds):</th>
+    <td>
+      <$edit-text
+          tiddler="$:/plugins/felixhayashi/respawn/config"
+          field="delay"
+          tag="input"
+          default="500" />
+    </td>
+  </tr>
+</table>
