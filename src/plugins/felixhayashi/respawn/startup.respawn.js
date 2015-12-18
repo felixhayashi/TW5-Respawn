@@ -23,7 +23,9 @@ module-type: startup
     var tObj = $tw.wiki.getTiddler("$:/StoryList");
     if(tObj && !tObj.fields["list"].length) {
       
-      var config = $tw.wiki.getTiddler(configTRef).fields;
+      var confTObj = $tw.wiki.getTiddler(configTRef);
+      var config = confTObj ? confTObj.fields : {};
+      
       window.setTimeout(function() {
         $tw.rootWidget.dispatchEvent({
           type: "tm-home"
