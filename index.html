@@ -8628,18 +8628,18 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div author="Felix Küppers" core-version="&gt;=5.1.5" dependents="" description="Respawn – Open default tiddlers when river is empty" list="Configuration License Readme" plugin-type="plugin" released="" source="https://github.com/felixhayashi/TW5-respawn" title="$:/plugins/felixhayashi/respawn" type="application/json" version="0.0.1">
+<div author="Felix Küppers" core-version="&gt;=5.1.5" dependents="" description="Respawn – Open default tiddlers when river is empty" list="Configuration License Readme" plugin-type="plugin" released="" source="https://github.com/felixhayashi/TW5-respawn" title="$:/plugins/felixhayashi/respawn" type="application/json" version="0.0.2">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/felixhayashi/respawn/respawn.js&quot;: {
-            &quot;text&quot;: &quot;/*\\\n\ntitle: $:/plugins/felixhayashi/respawn/respawn.js\ntype: application/javascript\nmodule-type: startup\n\n@preserve\n\n\\*/\n(function(){\&quot;use strict\&quot;;var t=\&quot;$:/plugins/felixhayashi/respawn/Configuration\&quot;;var e=function(e){if(!e[\&quot;$:/StoryList\&quot;])return;var i=$tw.wiki.getTiddler(\&quot;$:/StoryList\&quot;);if(i&amp;&amp;!i.fields[\&quot;list\&quot;].length){var r=$tw.wiki.getTiddler(t).fields;window.setTimeout(function(){$tw.rootWidget.dispatchEvent({type:\&quot;tm-home\&quot;})},parseInt(r.delay)||500)}};exports.name=\&quot;respawn\&quot;;exports.platforms=[\&quot;browser\&quot;];exports.after=[\&quot;story\&quot;];exports.synchronous=true;exports.startup=function(){$tw.wiki.addEventListener(\&quot;change\&quot;,e)}})();&quot;,
+            &quot;text&quot;: &quot;/*\\\n\ntitle: $:/plugins/felixhayashi/respawn/respawn.js\ntype: application/javascript\nmodule-type: startup\n\n@preserve\n\n\\*/\n(function(){\&quot;use strict\&quot;;var t=\&quot;$:/plugins/felixhayashi/respawn/config\&quot;;var e=function(e){if(!e[\&quot;$:/StoryList\&quot;])return;var i=$tw.wiki.getTiddler(\&quot;$:/StoryList\&quot;);if(i&amp;&amp;!i.fields[\&quot;list\&quot;].length){var r=$tw.wiki.getTiddler(t).fields;window.setTimeout(function(){$tw.rootWidget.dispatchEvent({type:\&quot;tm-home\&quot;})},parseInt(r.delay)||500)}};exports.name=\&quot;respawn\&quot;;exports.platforms=[\&quot;browser\&quot;];exports.after=[\&quot;story\&quot;];exports.synchronous=true;exports.startup=function(){$tw.wiki.addEventListener(\&quot;change\&quot;,e)}})();&quot;,
             &quot;title&quot;: &quot;$:/plugins/felixhayashi/respawn/respawn.js&quot;,
             &quot;type&quot;: &quot;application/javascript&quot;,
             &quot;module-type&quot;: &quot;startup&quot;
         },
         &quot;$:/plugins/felixhayashi/respawn/Configuration&quot;: {
             &quot;title&quot;: &quot;$:/plugins/felixhayashi/respawn/Configuration&quot;,
-            &quot;text&quot;: &quot;Please see the [[GitHub page|https://github.com/felixhayashi/TW5-Respawn]] for more information on the options.\n\nYou may have to save and reload the wiki to activate changes.\n\n&lt;table&gt;\n  &lt;tr&gt;\n    &lt;th align=\&quot;left\&quot;&gt;Delay (seconds):&lt;/th&gt;\n    &lt;td&gt;\n      &lt;$edit-text\n          tiddler=\&quot;$:/plugins/felixhayashi/respawn/config\&quot;\n          field=\&quot;delay\&quot;\n          tag=\&quot;input\&quot;\n          default=\&quot;500\&quot; /&gt;\n    &lt;/td&gt;\n  &lt;/tr&gt;\n&lt;/table&gt;&quot;
+            &quot;text&quot;: &quot;&lt;!-- The config output is not written to this tiddler! --&gt;\n\nPlease see the [[GitHub page|https://github.com/felixhayashi/TW5-Respawn]] for more information on the options.\n\nYou may have to save and reload the wiki to activate changes.\n\n&lt;table&gt;\n  &lt;tr&gt;\n    &lt;th align=\&quot;left\&quot;&gt;Delay (seconds):&lt;/th&gt;\n    &lt;td&gt;\n      &lt;$edit-text\n          tiddler=\&quot;$:/plugins/felixhayashi/respawn/config\&quot;\n          field=\&quot;delay\&quot;\n          tag=\&quot;input\&quot;\n          default=\&quot;500\&quot; /&gt;\n    &lt;/td&gt;\n  &lt;/tr&gt;\n&lt;/table&gt;&quot;
         },
         &quot;$:/plugins/felixhayashi/respawn/License&quot;: {
             &quot;title&quot;: &quot;$:/plugins/felixhayashi/respawn/License&quot;,
