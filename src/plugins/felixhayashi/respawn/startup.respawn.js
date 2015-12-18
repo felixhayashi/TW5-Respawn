@@ -14,7 +14,7 @@ module-type: startup
   /*global $tw: false */
   "use strict";
   
-  var configTRef = "$:/plugins/felixhayashi/respawn/Configuration";
+  var configTRef = "$:/plugins/felixhayashi/respawn/config";
   
   var changeListener = function(changedTiddlers) {
     

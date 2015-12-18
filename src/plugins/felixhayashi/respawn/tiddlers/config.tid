@@ -1,5 +1,7 @@
 title: $:/plugins/felixhayashi/respawn/Configuration
 
+<!-- The config output is not written to this tiddler! -->
+
 Please see the [[GitHub page|https://github.com/felixhayashi/TW5-Respawn]] for more information on the options.
 
 You may have to save and reload the wiki to activate changes.
